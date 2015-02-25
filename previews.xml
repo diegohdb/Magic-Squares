@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<previews>
+
+    <preview
+        name="3.3"
+        activity="com.example.magicsquares.MainActivity"
+        config="layout-ldltr-sw320dp-w320dp-h533dp-normal-long-port-notnight-ldpi-finger-keyssoft-nokeys-navhidden-nonav-400x240-v19"
+        device="3.3&quot; WQVGA"
+        devicestate="Portrait"
+        target="Android 4.4.2"
+        theme="@style/AppTheme" >
+    </preview>
+    <preview
+        name="4.7"
+        activity="com.example.magicsquares.MainActivity"
+        config="layout-ldltr-sw360dp-w360dp-h640dp-normal-long-port-notnight-xhdpi-finger-keyssoft-nokeys-navhidden-nonav-1280x720-v19"
+        device="4.7&quot; WXGA"
+        devicestate="Portrait"
+        target="Android 4.4.2"
+        theme="@style/AppTheme" >
+    </preview>
+    <preview
+        name="10"
+        activity="com.example.magicsquares.MainActivity"
+        config="layout-ldltr-sw800dp-w800dp-h1280dp-xlarge-long-port-notnight-mdpi-finger-keyssoft-nokeys-navhidden-nonav-1280x800-v19"
+        device="10.1&quot; WXGA (Tablet)"
+        devicestate="Portrait"
+        target="Android 4.4.2"
+        theme="@style/AppTheme" >
+    </preview>
+
+</previews>

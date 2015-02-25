@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert the first number"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/number01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert the second number"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/number02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose the operation"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btsum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btsub"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btmult"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btdiv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btpot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="^"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btrad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="rad"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btinv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="1/x"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btlog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="lg10"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btln"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ln"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bthip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="hip"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btsen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="sen"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btcos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="cos"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bttan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="tan"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+        
+         <Button
+            android:id="@+id/btbin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="bin"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+         
+          <Button
+            android:id="@+id/btdec"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="dec"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="Result"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</LinearLayout>

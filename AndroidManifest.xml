@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hello_world"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Magic Squares"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.hello_world.Intro"
+            android:label="Calculadora" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.example.hello_world.MainActivity"
+            android:label="Magic Squares" >
+        </activity>
+        <activity
+            android:name="com.example.hello_world.MS3x3"
+            android:label="Magic Squares" >
+        </activity>
+       
+    </application>
+
+</manifest>

@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
+    tools:context=".SIMLT" >
+
+    <TextView
+        android:id="@+id/tvTITLECONSULTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:textSize="30sp"
+        android:text="CONSULTE OS DADOS DE INSPEÇÃO CADASTRADOS" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTITLECONSULTA"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTRECHO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:text="LT:" />
+
+        <TextView
+            android:id="@+id/tvLT"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvPG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:textSize="25sp"
+            android:text="ORDEM:" />
+
+        <TextView
+            android:id="@+id/tvORDEM"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp">
+
+        </TextView>
+        
+        <TextView
+            android:id="@+id/tvORDEM2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="100dp"
+            android:textSize="25sp"
+            android:text="EQUIPE:" />
+
+	  	<TextView
+            android:id="@+id/tvEQUIPE"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp">
+
+        </TextView>
+        
+        
+    </LinearLayout>
+
+	<Button
+        android:id="@+id/btNEXT"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvTITLECONSULTA"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="800dp"
+        android:text="PRÓXIMO REGISTRO" />
+
+	<Button
+        android:id="@+id/btPREVIOUS"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+		android:layout_below="@+id/btNEXT"
+		android:layout_marginTop="30dp"
+		android:layout_alignLeft="@+id/btNEXT"
+        android:text="REGISTRO ANTERIOR" />	
+	
+    <Button
+        android:id="@+id/btBACKDACONSULTA"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+		android:layout_below="@+id/btPREVIOUS"
+		android:layout_marginTop="30dp"
+		android:layout_alignLeft="@+id/btPREVIOUS"
+        android:text="VOLTAR" />
+    
+    <Button
+        android:id="@+id/btEXCLUIR"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+		android:layout_below="@+id/btBACKDACONSULTA"
+		android:layout_marginTop="30dp"
+		android:layout_alignLeft="@+id/btBACKDACONSULTA"
+        android:text="EXCLUIR" />
+        
+    
+    
+
+</RelativeLayout>
