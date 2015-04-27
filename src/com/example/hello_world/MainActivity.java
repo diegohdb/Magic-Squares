@@ -3,8 +3,6 @@ package com.example.hello_world;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -19,9 +17,11 @@ public class MainActivity extends Activity {
 	// Variable for Database
 	public SQLiteDatabase bancoDados = null;
 	public Cursor cursor;
+	// Variables
 	double num1, num2, result;
+	// Variables for widgets
 	EditText etnum1, etnum2;
-	Button btsq33,btExit;
+	Button btsq33, btsq44, btsq55,btsq66, btsq1010,btExit;
 	TextView tvresult;
 	ImageButton imsq33;
 
@@ -29,56 +29,77 @@ public class MainActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		// Call the layout (screen)
 		setContentView(R.layout.main);
+
+		// Define the variable associated for each widget at the layout file
+		// (xml)
 		btsq33 = (Button) findViewById(R.id.btsq33);
-		
-		selectSq33();
+		btsq44 = (Button) findViewById(R.id.btsq44);
+		btsq55 = (Button) findViewById(R.id.btsq55);
+		btsq66 = (Button) findViewById(R.id.btsq66);
 
-		abreouCriabanco();
-
+		// Call the method
+		selectSq33(); // call the method to select Square 3x3
+		selectSq44(); // call the method to select Square 4x4
+		selectSq55(); // call the method to select Square 5x5
+		selectSq66(); // call the method to select Square 6x6
 	}
 
 	public void selectSq33() {
-		// Evento para o botão "Voltar"
+		// Event OnClick to open a dialog box
 		btsq33.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
-
-				AlertDialog.Builder builder = new AlertDialog.Builder(
-						MainActivity.this);
-				builder.setTitle("Attention");
-				builder.setMessage("Do you wish to start a new game or continue a previous one?");
-				builder.setPositiveButton("New",
-						new DialogInterface.OnClickListener() {
-							public void onClick(DialogInterface dialog, int id) {
-								// ação do botão "sim"
-
-								fechaBanco();
-								goSq33();
-							}
-						});
-				builder.setNegativeButton("Continue",
-						new DialogInterface.OnClickListener() {
-							public void onClick(DialogInterface dialog, int id) {
-								// ação do botão "Continue"
-								
-
-							}
-						});
-				builder.show();
-
+				// Function to change the Intent(class) - MainActivity.java for
+				// MS3x3.java
+				Intent intent = new Intent(MainActivity.this, MS3x3.class);
+				startActivity(intent);
 			}
 		});
 	}
 
-	// Method to choose the Magic Square 3x3
-	public void goSq33() {
-
-		Intent intent = new Intent(MainActivity.this, MS3x3.class);
-		startActivity(intent);
+	public void selectSq44() {
+		// Event OnClick to open a dialog box
+		btsq44.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// Function to change the Intent(class) - MainActivity.java for
+				// MS4x4.java
+				Intent intent = new Intent(MainActivity.this, MS4x4.class);
+				startActivity(intent);
+			}
+		});
 	}
+	
+	public void selectSq55() {
+		// Event OnClick to open a dialog box
+		btsq55.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// Function to change the Intent(class) - MainActivity.java for
+				// MS4x4.java
+				Intent intent = new Intent(MainActivity.this, MS5x5.class);
+				startActivity(intent);
+			}
+		});
+	}
+	public void selectSq66() {
+		// Event OnClick to open a dialog box
+		btsq66.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// Function to change the Intent(class) - MainActivity.java for
+				// MS4x4.java
+				Intent intent = new Intent(MainActivity.this, MS6x6.class);
+				startActivity(intent);
+			}
+		});
+	}
+	
 
+	// ************************ Method to the
+	// Database****************************
 	// MÉTODO PARA CRIAÇÃO/ABERTURA DO BANCO DE DADOS
 	public void abreouCriabanco() {
 		String nomeBanco = "bancoSQLite";

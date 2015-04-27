@@ -4,9 +4,14 @@
         <ignore path="res/layout/main.xml" />
     </issue>
     <issue id="HardcodedText">
+        <ignore path="res/layout/consulta.xml" />
+        <ignore path="res/layout/help.xml" />
         <ignore path="res/layout/intro.xml" />
         <ignore path="res/layout/main.xml" />
         <ignore path="res/layout/ms3x3.xml" />
+        <ignore path="res/layout/ms4x4.xml" />
+        <ignore path="res/layout/ms5x5.xml" />
+        <ignore path="res/layout/ms6x6.xml" />
     </issue>
     <issue id="NewApi" severity="ignore" />
     <issue id="UseCompoundDrawables">

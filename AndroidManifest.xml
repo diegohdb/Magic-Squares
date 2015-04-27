@@ -15,22 +15,46 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.hello_world.Intro"
-            android:label="Calculadora" >
+            android:label="Magic Squares"
+              android:screenOrientation="portrait" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"
+                      android:screenOrientation="portrait" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-         <activity
+        <activity
             android:name="com.example.hello_world.MainActivity"
-            android:label="Magic Squares" >
+            android:label="Magic Squares"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.hello_world.MS3x3"
-            android:label="Magic Squares" >
+            android:label="Magic Squares" 
+            android:screenOrientation="portrait">
         </activity>
-       
+        <activity
+            android:name="com.example.hello_world.MS4x4"
+            android:label="Magic Squares"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.example.hello_world.MS5x5"
+            android:label="Magic Squares" 
+            android:screenOrientation="portrait">
+        </activity>
+          <activity
+            android:name="com.example.hello_world.MS6x6"
+            android:label="Magic Squares" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.hello_world.Help"
+            android:label="MAGIC SQUARES - HELP"
+            android:theme="@android:style/Theme.Dialog" 
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

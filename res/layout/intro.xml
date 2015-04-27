@@ -7,19 +7,6 @@
     tools:context="com.example.magicsquares.MainActivity"
     tools:ignore="MergeRootFrame" >
 
-    <TextView
-        android:id="@+id/MagicSquares"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="Magic Squares"
-        android:textColor="@android:color/white"
-        android:textSize="50sp"  />
-
     <Button
         android:id="@+id/bttrans"
         android:layout_width="match_parent"
@@ -38,5 +25,445 @@
         android:text="Touch to Start"
         android:textColor="@android:color/white"
         android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:id="@+id/tabsq33"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.01"
+            android:background="#000000"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingTop="1dp" >
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#000000"
+                android:gravity="center_horizontal"
+                android:paddingBottom="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp" >
+
+                <TextView
+                    android:id="@+id/et11"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="M"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et12"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="4"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et13"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="G"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et14"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="1"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et15"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="C"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#000"
+                android:gravity="center_horizontal"
+                android:paddingBottom="3dp"
+                android:paddingRight="3dp" >
+
+               <TextView
+                    android:id="@+id/et21"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="4"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+              <TextView
+                    android:id="@+id/et22"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="S"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+             <TextView
+                    android:id="@+id/et23"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="E"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et24"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="R"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et25"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="A"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#000"
+                android:gravity="center_horizontal"
+                android:paddingBottom="3dp"
+                android:paddingRight="3dp" >
+
+                <TextView
+                    android:id="@+id/et31"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="G"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et32"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="Q"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et33"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et34"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="9"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et35"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="U"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#000"
+                android:gravity="center_horizontal"
+                android:paddingBottom="3dp"
+                android:paddingRight="3dp" >
+
+                <TextView
+                    android:id="@+id/et41"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="1"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et42"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="U"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et43"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="7"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et44"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="5"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et45"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="Q"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#000"
+                android:gravity="center_horizontal"
+                android:paddingBottom="3dp"
+                android:paddingRight="3dp" >
+
+                <TextView
+                    android:id="@+id/et51"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="C"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et52"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="A"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et53"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="R"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et54"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="E"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et55"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#FFF"
+                    android:gravity="center"
+                    android:hint="S"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
 
 </RelativeLayout>
